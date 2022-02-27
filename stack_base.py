@@ -4,9 +4,9 @@ class Node(object):
 
     def __init__(self, items, Next=None, count=0):
         # type: (object, object, int) -> None
-        """  """
-        super(Node, self).__setattr__("items", items)
+        """ 实例化节点 """
         super(Node, self).__setattr__("next", Next)
+        super(Node, self).__setattr__("items", items)
         super(Node, self).__setattr__("count", count)
 
     def __getattribute__(self, name):
